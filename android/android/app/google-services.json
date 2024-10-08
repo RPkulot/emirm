@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "646948376311",
+    "project_id": "e-irm-mobile",
+    "storage_bucket": "e-irm-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646948376311:android:89c4baa7b317dc8ee04df2",
+        "android_client_info": {
+          "package_name": "com.eirmuplb.eirmuplb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "646948376311-lhc7suo5dh7rsmbdbl4hno2p5e4qv1io.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eirmuplb.eirmuplb",
+            "certificate_hash": "7c1fa360e25ad504de3a500a6acca9eff04c7bbf"
+          }
+        },
+        {
+          "client_id": "646948376311-hm5dqnr94lbp0npe106un9fj92btkc94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL2rUQtz2RKc0esF2sx9o7PDGvEyh_9a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "646948376311-hm5dqnr94lbp0npe106un9fj92btkc94.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "646948376311-i5e8rhjbmos1lv7acgg7jgh39imacaj4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.eirmuplb.eirmuplb"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
