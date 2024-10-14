@@ -8,6 +8,7 @@ import 'package:eirmuplb/model/insecticidehistory.dart';
 import 'package:eirmuplb/reusable_widgets/add_schedule_dialog_widget.dart';
 import 'package:eirmuplb/reusable_widgets/month_view_widget.dart';
 import 'package:eirmuplb/services/notification_service.dart';
+import 'package:eirmuplb/user_notes.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'infestation_check_page.dart';
@@ -193,32 +194,42 @@ class _CalendarRouteState extends State<CalendarRoute> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+      floatingActionButton: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        FloatingActionButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          backgroundColor: Color(0xFF27ae60),
+          onPressed: () {
+            showModalBottomSheet(
+              context: context,
+              builder: (BuildContext context) {
+                return KeyNotes(); // Show InputPage as a bottom sheet
+              },
+            );
+          },
+          child: Icon(Icons.edit_note, size: 30),
         ),
-        backgroundColor: Color(0xFF27ae60),
-        onPressed: ()
-        {
-          Navigator.pop(context);
-          Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) =>
-                  InfestationCheckPageRoute()));
-          // _addEvent();
-        },
-        child: Icon(Icons.add),
-      ),
+
+        FloatingActionButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          backgroundColor: Color(0xFF27ae60),
+          onPressed: () {
+            Navigator.pop(context);
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => InfestationCheckPageRoute()));
+          },
+          child: Icon(Icons.add),
+
+        ),
+      ],
+    ),
     );
   }
-  // Future<void> _addEvent() async {
-  //   // void pop([dynamic value]) => Navigator.of(this).pop(value);
-  //   final event = await Navigator.of(context).push(MaterialPageRoute<CalendarEventData<Event>>(builder: (context) => AddScheduleDialogWidget()));
-  //
-  //   // final event = await context.pushRoute<CalendarEventData<Event>>(AddTimelineDialogWidget(),);
-  //   print(event);
-  //   if (event == null) return;
-  //   CalendarControllerProvider.of<Event>(context).controller.add(event);
-  // }
 }
 
 

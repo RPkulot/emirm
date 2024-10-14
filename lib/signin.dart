@@ -36,7 +36,6 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        // color: Color(0xFF27ae60),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(
@@ -67,61 +66,6 @@ class _SignInScreenState extends State<SignInScreen> {
                   }
                 }),
                 SizedBox(height: 30,),
-                // Container(
-                //   width: MediaQuery.of(context).size.width,
-                //   height: 50,
-                //   margin: const EdgeInsets.fromLTRB(0, 10, 0, 20),
-                //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(90)),
-                //   child: ElevatedButton(
-                //     onPressed: () async {
-                //       var databasesPath = await getDatabasesPath();
-                //       var path = join(databasesPath!, 'demo_asset_example.db');
-                //       deleteDatabase(path);
-                //       await EIRMUserInfoDatabase.instance.regenerateDB();
-                //     },
-                //     child: Text('drop user db',
-                //       style: const TextStyle(
-                //           color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 16),
-                //     ),
-                //     style: ButtonStyle(
-                //         backgroundColor: MaterialStateProperty.resolveWith((states) {
-                //           if (states.contains(MaterialState.pressed)) {
-                //             return Colors.black26;
-                //           }
-                //           return Colors.white;
-                //         }),
-                //         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                //             RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))),
-                //   ),
-                // ),
-
-                // Container(
-                //   width: MediaQuery.of(context).size.width,
-                //   height: 50,
-                //   margin: const EdgeInsets.fromLTRB(0, 10, 0, 20),
-                //   decoration: BoxDecoration(borderRadius: BorderRadius.circular(90)),
-                //   child: ElevatedButton(
-                //     onPressed: () async {
-                //       var databasesPath = await getDatabasesPath();
-                //       var path = join(databasesPath!, 'asset_database.db');
-                //       deleteDatabase(path);
-                //       await EIRMAssetDatabase.instance.regenerateDB();
-                //     },
-                //     child: Text('drop asset db',
-                //       style: const TextStyle(
-                //           color: Colors.black87, fontWeight: FontWeight.bold, fontSize: 16),
-                //     ),
-                //     style: ButtonStyle(
-                //         backgroundColor: MaterialStateProperty.resolveWith((states) {
-                //           if (states.contains(MaterialState.pressed)) {
-                //             return Colors.black26;
-                //           }
-                //           return Colors.white;
-                //         }),
-                //         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                //             RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))),
-                //   ),
-                // ),
               ],
             ),
           ),
